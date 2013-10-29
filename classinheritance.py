@@ -1,0 +1,49 @@
+-#class gains attributes of another class#
+-
+-class Library(object):
+-   def __init__ (self,name):
+-      self.name='X'
+-   def printName(self):
+-      print self.name
+-   def libDict(self):
+-      self.dict={'a':'b'}
+-   def printDict(self):
+-      print dict.items()
+-      
+-               
+-class Shelf(Library):
+-   def __init__(self,name,bookName):
+-      super(Shelf,self).__init__ (name)
+-      self.name='A'
+-    
+-      #after Book is instantiated
+-      
+-          
+-class Book:
+-   def __init__ (self,bookName):
+-      self.name=bookName
+-     
+-   #add a book to dict - test ?
+-      super(Shelf,self).__init__ (keyValue)
+-      dict.update({sh.name.bookname})
+-      
+-   #def unshelf(self,keyValue):
+-      ##remove a book that is in the dict
+-      #super(Shelf,self).__init__ (keyValue)
+-      #del dict[keyValue]
+-      #return dict
+-    
+- 
+-#check the shelf,book OK
+-sh=Shelf('A','Huck Finn')
+-sh.printName()
+-print sh.name
+-print sh.book.name
+-
+-#put that book back on the shelf
+-#bk=Book(sh.name,sh.book.name)
+-#bk=enshelf(sh.name,sh.book.name)
+-#print dict.items()
+-
+-
+-
